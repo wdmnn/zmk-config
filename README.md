@@ -21,7 +21,7 @@ To build the firmware:
 - Trigger a build:
   - Make a trivial change to ./build.yaml (or any non *.md file)
   - Push that change
-- Look in the [Actions](https://github.com/mmccoyd/zmk-config/actions) tab
+- Look in the [Actions](https://github.com/wdmnn/zmk-config/actions) tab
      for the build triggered by that change. 
 - Wait for the build to finish
 - Click on the build link next to the green checkbox
