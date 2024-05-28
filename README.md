@@ -1,15 +1,14 @@
 # Hillside ZMK firmware
 
 ![hillside](https://imgur.com/emWDXiT.png)
-[![Build](https://github.com/mmccoyd/zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/mmccoyd/zmk-config/actions/workflows/build.yml)
+
+[![Build](https://github.com/wdmnn/zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/wdmnn/zmk-config/actions/workflows/build.yml)
 
 This is the [ZMK](https://zmk.dev/docs) firmware
  for the [Hillside](https://github.com/mmccoyd/hillside) family of split ergonomic keyboards.
 
 It contains keymap definition files for three boards in [./config](./config):
 
- - Hillside 52 with 3x6+3+5 keys
- - Hillside 48 with 3x6+1+5 keys
  - Hillside 46 with 3x6+5 keys
 
 Pushing changes will build all the keyboards. You need to be signed in to a GitHub account to push changes and build the firmware. To not waste build time, comment out the keyboards in [./build.yaml](./build.yaml) that you do not have.
