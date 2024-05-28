@@ -33,9 +33,10 @@ To build the firmware:
   you can modify the keymap.
 Your copies of the default Hillside keymaps are in:
 
-- [./config/hillside52.keymap](./config/hillside52.keymap)
-- [./config/hillside48.keymap](./config/hillside48.keymap)
 - [./config/hillside46.keymap](./config/hillside46.keymap)
+
+A keymap editor can be found here:
+- [Keymap editor](https://nickcoutsos.github.io/keymap-editor)
 
 Modify those as needed. Pushing the change will trigger a build as above.
 
