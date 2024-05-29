@@ -39,7 +39,7 @@ The keymap used is inspired by:
 A keymap editor can be found here:
 - [Keymap editor](https://nickcoutsos.github.io/keymap-editor)
 
-There is also a [JSON](./config/hillside46.json) for [Keyboard layout editor](http://www.keyboard-layout-editor.com/#/)
+There is also a [JSON](./config/hillside-46.json) for [Keyboard layout editor](http://www.keyboard-layout-editor.com/#/)
 
 Pushing the change will trigger a build as above.
 
