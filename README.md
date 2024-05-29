@@ -46,12 +46,4 @@ Pushing the change will trigger a build as above.
 If you want to enable features,
   modify the appropriate ./config/hillside*.conf file.
 
-To add RGB support, uncomment the lines in the ./config/hillside*.conf file
-  and add the ```&rgb_ug RGB_TOG``` and other keycodes to the keymap adjust layer.
-While RGB is disabled, any RGB control keys
-  behave as transparent keys and activate keys on lower layers,
-  which can be confusing.
-
 The Hillside shield definition files should *not* need to be modified and are in ./config/boards/shields.
-
-More information about each keymap is in their readme files.
