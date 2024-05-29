@@ -28,16 +28,20 @@ To build the firmware:
 - See [Installing The Firmware](https://zmk.dev/docs/user-setup#installing-the-firmware)
   for more details from there.
 
-*Once* your board works with the default firmware,
-  you can modify the keymap.
-Your copies of the default Hillside keymaps are in:
+The keymap used is inspired by:
 
+- [Markstos Corne keymap](https://mark.stosberg.com/markstos-corne-3x5-1-keyboard-layout/)
+- [Kyria keymap](https://keymapdb.com/keymaps/default-kyria/)
+
+...and can be found here:
 - [./config/hillside46.keymap](./config/hillside46.keymap)
 
 A keymap editor can be found here:
 - [Keymap editor](https://nickcoutsos.github.io/keymap-editor)
 
-Modify those as needed. Pushing the change will trigger a build as above.
+There is also a [JSON](./config/hillside46.json) for [Keyboard layout editor](http://www.keyboard-layout-editor.com/#/)
+
+Pushing the change will trigger a build as above.
 
 If you want to enable features,
   modify the appropriate ./config/hillside*.conf file.
