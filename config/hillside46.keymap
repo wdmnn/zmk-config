@@ -43,13 +43,13 @@
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | TAB   |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Z   |   /   |  DEL  |
  * | ALT   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ALTGR |
- * | SHIFT |   Y   |   X   |   C   |   D   |   V   |  ESC  |-------------------| CAPS  |   K   |   H   |   ,   |   .   |   -   |   '   |
+ * | SHIFT |   Y   |   X   |   C   |   D   |   V   |  ESC  |-------------------| CAPS  |   K   |   H   |   ,   |   .   |   -   |   "   |
  *                                 |  GUI  |  CTRL | ENTER |  Sym  |---|  Nav  | SPACE | SHIFT | BKSPC |
  */
                         bindings = <
 &kp  TAB      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                         &kp  J               &kp  L        &kp  U           &kp  Z        &kp  DE_FSLH     &kp  DELETE
 &sk  LALT     &kp  A        &kp  R        &kp  S        &kp  T        &kp  G                                                                         &kp  M               &kp  N        &kp  E           &lt 4 I       &kp  O           &sk  RALT
-&td0          &kp  Y        &kp  X        &kp  C        &kp  D        &kp  V        &kp   ESC                                          &caps_word    &kp  K               &kp  H        &kp  DE_COMMA    &kp  DE_DOT   &kp  DE_MINUS    &kp  DE_SQT
+&td0          &kp  Y        &kp  X        &kp  C        &kp  D        &kp  V        &kp   ESC                                          &caps_word    &kp  K               &kp  H        &kp  DE_COMMA    &kp  DE_DOT   &kp  DE_MINUS    &kp  DE_DQT
                                                         &kp  LGUI     &sk  LCTRL    &kp  ENTER     &mo  SYM_L            &mo  NAV_L    &kp  SPACE    &td0                 &kp  BSPC
                         >;
                 };
@@ -57,13 +57,13 @@
                 nav_layer {
 /* NAV   
  * -------------------------------------------------------------------------------------------------------------------------------------
- * |       |   ~   |       |       |       |       |-----------------------------------| PG UP |  Home |   Up  | End   |       |       |
+ * |       |   ~   |   '   |       |       |       |-----------------------------------| PG UP |  Home |   Up  | End   |       |       |
  * |       |   |   |   \   |       |       |       |-----------------------------------| PG DN |  Left |  Down | Right | Menu  |       |
  * |       |   <   |   >   | Copy  |  Cut  | Paste |       |-------------------|       |       |  Ins  |       |       |       |       |
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
                         bindings = <
-&trans        &kp  DE_TILDE &none         &none         &none         &none                                                                          &kp   PG_UP   &kp  HOME    &kp   UP      &kp   END     &none         &trans
+&trans        &kp  DE_TILDE &kp  DE_SQT   &none         &none         &none                                                                          &kp   PG_UP   &kp  HOME    &kp   UP      &kp   END     &none         &trans
 &trans        &kp  DE_PIPE  &kp  DE_BSLH  &none         &none         &none                                                                          &kp   PG_DN   &kp  LEFT    &kp   DOWN    &kp   RIGHT   &kp  K_CMENU  &trans
 &trans        &kp  DE_LT    &kp  DE_GT    &kp  Copy     &kp  Cut      &kp  Paste    &trans                                             &trans        &none         &kp  INS     &none         &none         &none         &none
                                                         &trans        &trans        &trans        &trans                 &mo ADJ_L     &trans        &trans        &trans 
