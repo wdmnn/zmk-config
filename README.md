@@ -1,6 +1,6 @@
 # Hillside ZMK firmware
 
-![hillside]([https://imgur.com/emWDXiT.png](https://i.ibb.co/tqh33LV/PXL-20240531-063437872.jpg))
+![hillside](https://i.ibb.co/tqh33LV/PXL-20240531-063437872.jpg)
 
 [![Build](https://github.com/wdmnn/zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/wdmnn/zmk-config/actions/workflows/build.yml)
 
