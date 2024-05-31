@@ -5,7 +5,7 @@
 [![Build](https://github.com/wdmnn/zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/wdmnn/zmk-config/actions/workflows/build.yml)
 
 This is the [ZMK](https://zmk.dev/docs) firmware
- for the [Hillside46]([https://github.com/mmccoyd/hillside](https://github.com/wdmnn/hillside)) split ergonomic keyboard.
+ for the [Hillside46](https://github.com/wdmnn/hillside) split ergonomic keyboard.
 
 The keymap definition file for the board in [./config](./config):
 
