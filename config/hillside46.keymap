@@ -128,7 +128,6 @@
                         >;
                 };
 
-
                 quertz_layer {
 
 /* QWERTZ
@@ -161,7 +160,5 @@
                                                                     &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
                         >;
                 };
-
-
         };
 };
