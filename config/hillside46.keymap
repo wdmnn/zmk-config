@@ -16,6 +16,8 @@
 #define SYM_L    2
 #define ADJ_L    3
 #define UML_L    4
+#define QUERTZ_L 5
+#define UMLQ_L   6
 
 #define Undo   LC(Z)
 #define Cut    LC(X)
@@ -97,13 +99,13 @@
                 adj_layer {
 /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | RESET |  F9   |  F10  |  F11  |  F12  |       |-----------------------------------|       |       |       |       |       | RESET |
+ * | RESET |  F9   |  F10  |  F11  |  F12  |       |-----------------------------------|       |  CMK  | QWERT |       |       | RESET |
  * |       |  F5   |  F6   |  F7   |  F8   |       |-----------------------------------| BT 0  |  BT 1 | BT 2  |       |       |       |
  * |       |  F1   |  F2   |  F3   |  F4   |       |BT CLR |-------------------| CAPS  |OUT_BLE|OUT_USB|       |       |       | BOOTL |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-&sys_reset    &kp  F9       &kp  F10      &kp  F11      &kp  F12      &none                                                                             &none             &none              &none           &none   &none  &sys_reset
+&sys_reset    &kp  F9       &kp  F10      &kp  F11      &kp  F12      &none                                                                             &none             &to  COLEMK_L      &to  QWERTZ_L           &none   &none  &sys_reset
 &trans        &kp  F5       &kp  F6       &kp  F7       &kp  F8       &none                                                                             &bt  BT_SEL 0     &bt  BT_SEL 1      &bt  BT_SEL 2   &none   &none  &trans
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &none         &bt BT_CLR                                         &kp CAPS         &out  OUT_BLE     &out  OUT_USB      &none           &none   &none  &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
@@ -127,8 +129,38 @@
                 };
 
 
+                quertz_layer {
 
+/* QWERTZ
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |
+ * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   | ENTER |
+ * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  CAPS |   N   |   M   |   ,   |   .   |   /   |   '   |
+ *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
+ */
+                        bindings = <
+&kp  TAB     &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  DE_Z        &kp  U        &kp  I        &kp  O        &kp  P         &kp  DELETE
+&sk  LALT    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H           &kp  J        &kp  K        &kp  L        &lt 6          &kp  RALT  
+&td0         &kp  DE_Y     &kp  X        &kp  C        &kp  V        &kp  B        &kp  ESC                                           &caps_word    &kp  N           &kp  M        &kp  DE_COMMA &kp  DE_DOT   &kp  DE_MINUS  &kp  DE_DQT
+                                                       &kp  LGUI     &sk  LCTRL    &kp  ENTER     &mo  SYM_L            &mo  NAV_L    &kp  SPACE    &td0             &kp  BSPC
+                        >;
+                };
 
+                umlq_layer {
+/* ADJUST
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * |       |       |       |       |       |       |-----------------------------------|       |   ü   |       |       |       |       |
+ * |       |   ä   |    ß  |       |       |       |-----------------------------------|       |       |       |       |   Ö   |       |
+ * |       |       |       |       |       |       |       |-------------------|       |       |       |       |       |       |       |
+ *                                 |       |       |       |       |---|       |       |       |       |
+ */
+                        bindings = <
+&trans        &trans           &trans              &trans           &trans        &trans                                                                            &trans            &kp DE_U_UMLAUT    &trans           &trans    &trans            &trans 
+&trans        &kp DE_A_UMLAUT  &kp DE_CAPITAL_SZ   &trans           &trans        &trans                                                                            &trans            &trans             &trans           &trans    &kp DE_O_UMLAUT   &trans
+&trans        &trans           &trans              &trans           &trans        &trans        &trans                                             &trans           &trans            &trans             &trans           &trans    &trans            &trans 
+                                                                    &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
+                        >;
+                };
 
 
         };
