@@ -143,6 +143,22 @@
                         >;
                 };
 
+                umlq_layer {
+/* ADJUST
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * |       |       |       |       |       |       |-----------------------------------|       |   ü   |       |       |       |       |
+ * |       |   ä   |    ß  |       |       |       |-----------------------------------|       |       |       |       |   Ö   |       |
+ * |       |       |       |       |       |       |       |-------------------|       |       |       |       |       |       |       |
+ *                                 |       |       |       |       |---|       |       |       |       |
+ */
+                        bindings = <
+&trans        &trans           &trans              &trans           &trans        &trans                                                                            &trans            &kp DE_U_UMLAUT    &trans           &trans    &trans            &trans 
+&trans        &kp DE_A_UMLAUT  &kp DE_SZ           &trans           &trans        &trans                                                                            &trans            &trans             &trans           &trans    &kp DE_O_UMLAUT   &trans
+&trans        &trans           &trans              &trans           &trans        &trans        &trans                                             &trans           &trans            &trans             &trans           &trans    &trans            &trans 
+                                                                    &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
+                        >;
+                };
+
 
         };
 };
