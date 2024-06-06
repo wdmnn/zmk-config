@@ -98,13 +98,13 @@
                 adj_layer {
 /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | RESET |  F9   |  F10  |  F11  |  F12  |       |-----------------------------------|       |       |       |       |       | RESET |
+ * | RESET |  F9   |  F10  |  F11  |  F12  |       |-----------------------------------| CMK   | QWERTZ|       |       |       | RESET |
  * |       |  F5   |  F6   |  F7   |  F8   |       |-----------------------------------| BT 0  |  BT 1 | BT 2  |       |       |       |
  * |       |  F1   |  F2   |  F3   |  F4   |       |BT CLR |-------------------| CAPS  |OUT_BLE|OUT_USB|       |       |       | BOOTL |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-&sys_reset    &kp  F9       &kp  F10      &kp  F11      &kp  F12      &none                                                                             &none             &none              &none           &none   &none  &sys_reset
+&sys_reset    &kp  F9       &kp  F10      &kp  F11      &kp  F12      &none                                                                             &to 0             &to 5              &none           &none   &none  &sys_reset
 &trans        &kp  F5       &kp  F6       &kp  F7       &kp  F8       &none                                                                             &bt  BT_SEL 0     &bt  BT_SEL 1      &bt  BT_SEL 2   &none   &none  &trans
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &none         &bt BT_CLR                                         &kp CAPS         &out  OUT_BLE     &out  OUT_USB      &none           &none   &none  &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
