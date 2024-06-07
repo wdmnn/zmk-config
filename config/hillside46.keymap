@@ -58,7 +58,7 @@
                         bindings = <
 &kp  TAB      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                              &kp  J               &kp  L        &kp  U           &kp  DE_Z        &kp  DE_FSLH     &kp  DELETE
 &sk  LALT     &kp  A        &kp  R        &kp  S        &kp  T        &kp  G                                                                              &kp  M               &kp  N        &kp  E           &kp  I           &kp  O           &sk  RALT
-&td0          &kp  DE_Y     &kp  X        &kp  C        &kp  D        &kp  V        &kp   ESC                                          &lt 4 caps_word    &kp  K               &kp  H        &kp  DE_COMMA    &kp  DE_DOT   &kp  DE_MINUS    &kp  DE_DQT
+&td0          &kp  DE_Y     &kp  X        &kp  C        &kp  D        &kp  V        &kp   ESC                                          &lt 4 CAPS         &kp  K               &kp  H        &kp  DE_COMMA    &kp  DE_DOT   &kp  DE_MINUS    &kp  DE_DQT
                                                         &kp  LGUI     &sk  LCTRL    &kp  ENTER     &mo  SYM_L            &mo  NAV_L    &kp  SPACE         &td0                 &kp  BSPC
                         >;
                 };
