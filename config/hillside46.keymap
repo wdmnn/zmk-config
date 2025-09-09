@@ -133,7 +133,7 @@
  * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |
  * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   ;   | ENTER |
  * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  Uml  |   N   |   M   |   ,   |   .   |   /   |   '   |
- *                                 |  GUI  |  ALT  |SK SHFT|  Sym  |---|  Nav  | SPACE |  ALT  |  GUI  |
+ *                                 |  GUI  |  CTRL | ENTER |  Sym  |---|  Nav  | SPACE | SHIFT | BKSPC |
  */
                         bindings = <
 &kp  TAB     &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                                                         &kp  DE_Z        &kp  U        &kp  I        &kp  O        &kp  P         &kp  DELETE
